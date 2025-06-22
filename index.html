@@ -6,10 +6,66 @@
   <title>Baglamukhi Havan Services</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #ffd000;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .nav-links {
+      list-style: none;
+      display: none;
+      gap: 20px;
+      flex-direction: column;
+      background-color: #ffd000;
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .nav-links.active {
+      display: flex;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+    @media (min-width: 769px) {
+      .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        padding: 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <header class="hero animate__animated animate__fadeIn">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#booking">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero animate__animated animate__fadeIn" style="margin-top: 60px;">
     <div class="hero-content">
       <h1 class="animate__animated animate__zoomIn">Baglamukhi Havan</h1>
       <p class="animate__animated animate__fadeInUp">Invoke divine protection • Silence adversaries • Attain success</p>
@@ -22,7 +78,7 @@
     <p>A sacred fire ceremony dedicated to Goddess Baglamukhi—renowned for her power to immobilize negative forces, secure protection, and grant victory.</p>
   </section>
 
-  <section class="about animate__animated animate__fadeInUp">
+  <section id="about" class="about animate__animated animate__fadeInUp">
     <h2>About Goddess Baglamukhi</h2>
     <p class="animate__animated animate__fadeIn animate__delay-1s">Goddess Baglamukhi, also known as Pitambara Devi, is the 8th Mahavidya among the ten Mahavidyas in Hinduism. She is the goddess of power, wisdom, and victory. Her name literally means "the one who restrains the tongue," and she is worshipped to paralyze enemies, destroy evil forces, and gain control over adversaries.</p>
     <p class="animate__animated animate__fadeIn animate__delay-2s">She is typically depicted with a golden complexion, wearing yellow clothes, and seated on a throne in the middle of a golden throne. Her worship is most effective when performed during the night of Amavasya (new moon).</p>
@@ -104,6 +160,11 @@
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
 
       window.open(whatsappURL, '_blank');
+    }
+
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("active");
     }
   </script>
 
