@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baglamukhi Havan Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="hero animate__animated animate__fadeIn">
+    <div class="hero-content">
+      <h1 class="animate__animated animate__zoomIn">Baglamukhi Havan</h1>
+      <p class="animate__animated animate__fadeInUp">Invoke divine protection • Silence adversaries • Attain success</p>
+      <a href="#booking" class="btn-primary animate__animated animate__pulse animate__infinite">Book a Puja</a>
+    </div>
+  </header>
+
+  <section class="introduction animate__animated animate__fadeInUp">
+    <h2>What Is Baglamukhi Havan?</h2>
+    <p>A sacred fire ceremony dedicated to Goddess Baglamukhi—renowned for her power to immobilize negative forces, secure protection, and grant victory.</p>
+  </section>
+
+  <section class="about animate__animated animate__fadeInUp">
+    <h2>About Goddess Baglamukhi</h2>
+    <p class="animate__animated animate__fadeIn animate__delay-1s">Goddess Baglamukhi, also known as Pitambara Devi, is the 8th Mahavidya among the ten Mahavidyas in Hinduism. She is the goddess of power, wisdom, and victory. Her name literally means "the one who restrains the tongue," and she is worshipped to paralyze enemies, destroy evil forces, and gain control over adversaries.</p>
+    <p class="animate__animated animate__fadeIn animate__delay-2s">She is typically depicted with a golden complexion, wearing yellow clothes, and seated on a throne in the middle of a golden throne. Her worship is most effective when performed during the night of Amavasya (new moon).</p>
+    <p class="animate__animated animate__fadeIn animate__delay-3s">Devotees seek her blessings to overcome legal issues, defeat enemies, remove black magic or negativity, and achieve spiritual peace. Her mantra—<strong>“ओं हीं बगलामुखि सर्वदुटानां वाचं मुखं पदं स्तमय जिन्बं कीलय बुद्धिं विनाशय हीं ओं स्वाहाः”</strong>—is believed to have immense protective power.</p>
+  </section>
+
+  <h2 class="section-title animate__animated animate__fadeIn">Baglamukhi Devi Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item animate__animated animate__zoomIn">
+      <img src="https://i.ibb.co/pB0SjdMX/devi1.jpg" alt="Devi Idol" />
+      <p>Devi Idol</p>
+    </div>
+    <div class="gallery-item animate__animated animate__zoomIn">
+      <img src="https://i.ibb.co/n8sgYtnV/devi2.jpg" alt="Devi Idol Closeup" />
+      <p>Devi Idol Closeup</p>
+    </div>
+    <div class="gallery-item animate__animated animate__zoomIn">
+      <img src="https://i.ibb.co/LdVJzm5C/devi3.jpg" alt="Devi Idol Blessing Ceremony" />
+      <p>Devi Idol Blessing Ceremony</p>
+    </div>
+    <div class="gallery-item animate__animated animate__zoomIn">
+      <img src="https://i.ibb.co/21PT5Ggy/decorated-temple.jpg" alt="Decorated Temple View" />
+      <p>Decorated Temple View</p>
+    </div>
+  </div>
+
+  <section class="puja-schedule animate__animated animate__fadeInUp">
+    <h2>Monthly Puja Schedule – June 2025</h2>
+    <ul>
+      <li><strong>June 5:</strong> Full Moon Night – Maha Baglamukhi Havan</li>
+      <li><strong>June 10:</strong> Wednesday Special – Enemy Shanti Yagya</li>
+      <li><strong>June 17:</strong> Amavasya Night – Special Tantra Havan</li>
+      <li><strong>June 24:</strong> Monthly Group Havan (Online Participation)</li>
+    </ul>
+  </section>
+
+  <section class="live-darshan animate__animated animate__fadeInUp">
+    <h2>Live Darshan & Mantra Chanting</h2>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yDFdBEzm5xk"
+        title="Baglamukhi Mantra Jaap" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section id="booking" class="booking animate__animated animate__fadeInUp">
+    <h2>Book Your Havan</h2>
+    <form class="booking-form" onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="date" id="date" required />
+      <textarea id="purpose" placeholder="Purpose (e.g., legal victory)" rows="3" required></textarea>
+      <button type="submit" class="btn-secondary">Submit Booking</button>
+    </form>
+  </section>
+
+  <footer class="footer animate__animated animate__fadeInUp">
+    <p>&copy; 2025 Baglamukhi Havan Services</p>
+    <p>Email: pt38526@gmail.com | Phone: +91 7999280205</p>
+  </footer>
+
+  <a href="https://wa.me/7999280205" class="whatsapp-float animate__animated animate__fadeIn" target="_blank" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
+
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const date = document.getElementById("date").value;
+      const purpose = document.getElementById("purpose").value;
+
+      const message = `🙏 *New Havan Booking Request* 🙏%0A👤 Name: ${name}%0A📧 Email: ${email}%0A📅 Date: ${date}%0A🕉️ Purpose: ${purpose}`;
+
+      const phoneNumber = "917999280205";
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+      window.open(whatsappURL, '_blank');
+    }
+  </script>
+
+</body>
+</html>

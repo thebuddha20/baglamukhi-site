@@ -1,0 +1,205 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff9eb;
+  color: #222;
+}
+
+/* Hero Banner */
+.hero {
+  background: url('https://pitambara.org/wp-content/uploads/2024/04/baglamukhi-devi.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.btn-primary {
+  background-color: #ffd000;
+  color: #222;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* Intro & Features */
+.introduction, .features, .about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.introduction h2,
+.about h2 {
+  font-size: 2rem;
+  color: #d29b00;
+  margin-bottom: 10px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.7;
+}
+
+.feature-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature {
+  background: #fff3d6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40px;
+  color: #2b2b2b;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.gallery-item {
+  width: 200px;
+  text-align: center;
+  background-color: #fff3d6;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-item p {
+  margin: 10px 0 0;
+  font-weight: 500;
+}
+
+/* Puja Schedule */
+.puja-schedule {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.puja-schedule ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.puja-schedule li {
+  margin: 10px 0;
+}
+
+/* Live Darshan */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Booking Form */
+.booking {
+  background: #fff3d6;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.booking-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn-secondary {
+  background-color: #f5b000;
+  color: white;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #e1a900;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9em;
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+}
